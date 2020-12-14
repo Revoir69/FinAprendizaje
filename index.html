@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fin de año Aprendizaje</title>
+    <link rel="stylesheet" href="css/stylesheet.css">
+    <link rel="stylesheet" href="socialstory/socialstory.css">
+    <script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
+    <script type="text/javascript" src="js/jquery-ui.min.js"></script>
+    <script type="text/javascript" src="gsap/TweenMax.min.js"></script>
+    <script type="text/javascript" src="js/app.js"></script>
+    <script type="text/javascript" src="socialstory/socialstory.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/ScrollMagic.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/debug.addIndicators.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/animation.gsap.js"></script>
+</head>
+<body>
+    <div id="container">
+        <img id="card" src="img/card.png">
+        <h1 class="title">Hitos</h1>
+        <div id="trigger" class="spacer s0"></div>
+        <img id="podium" src="img/Escalera.png">
+        <img id="luz1" src="img/luz1.png">
+        <img id="luz2" src="img/luz2.png">
+        <img id="logo" src="img/logo.png">
+
+        <h1 class="title1">Logros<br> 2020</h1>
+        <h1 class="title1 sub">Banco</h1>
+        <h3 class="title2"><b>Transformación digital en el aprendizaje</b> previo a momentos de crisis</h3>
+        <p class="p1">Estábamos preparados para el momento de pandemia, al haber tenido transformado digitalmente nuestro modelo de aprendizaje 
+        </p>
+
+        <img id="logro1" src="img/logro_1.png">
+
+        <img id="logro2" src="img/logro_2.png">
+        <p class="p2"><b>U. Xplora como socio estratégico</b> de la organización reconocido como una iniciativa de innovación digital
+        </p>
+
+        <img id="logro3" src="img/logro_3.png">
+        <p class="p3">Mayor <b>cultura de cumplimiento</b> académico
+        </p>
+        <img id="logro4" src="img/logro_4.png">
+        <p class="p4"><b>Integración y unificación</b> con filiales a través de una estrategia y una forma de trabajar
+        </p>
+        <img id="logro5" src="img/logro_5.png">
+        <p class="p5"><b>Impacto</b> de las Facultades analítica e Innovación en la estrategia de la organización
+        </p>
+        <img id="logro6" src="img/logro_6.png">
+        <p class="p6"><b>Solución ágil y disruptiva</b> con Plan de estudios y Modo Aprendizaje Red Comercial
+        </p>
+
+        <img id="stories" onclick="socialStory.launch();" src="img/mirror.png">
+        <!-- <button type="button" onclick="socialStory.launch();">Launch Social Story</button> -->
+        <div id="storytime"></div>
+    </div>
+        
+    
+
+    <script>
+        // init controller
+        var controller = new ScrollMagic.Controller({vertical: false});
+
+  
+    
+        // build tween
+        var tween = TweenMax.to("#logo", 1, {opacity: 1, y:0 });
+        var tween1 = TweenMax.to("#luz1", 1, {opacity: 1});
+        var tween2 = TweenMax.to("#luz2", 1, {opacity: 1});
+    
+        // build scene
+        var scene = new ScrollMagic.Scene({triggerElement: "#title", duration: 700, offset: 1300})
+                        .setTween(tween)
+                        .addIndicators() // add indicators (requires plugin)
+                        .addTo(controller);
+
+        var scene2 = new ScrollMagic.Scene({triggerElement: "#luz2", duration: 800, offset:50})
+                        .setTween(tween1)
+                        .addIndicators() // add indicators (requires plugin)
+                        .addTo(controller);
+
+        var scene3 = new ScrollMagic.Scene({triggerElement: "#luz1", duration: 800, offset:120})
+                        .setTween(tween2)
+                        .addIndicators() // add indicators (requires plugin)
+                        .addTo(controller);
+    </script>
+
+      <script>
+		var myPlaylist = [
+		{
+			"title": "Xplora Stories",
+			"date": "2 hours ago",
+			"url": "media/IMG_4627.mov",
+			"icon": "media/small-icon.jpg"
+		},
+		{
+			"title": "Xplora Stories",
+			"date": "1 day ago",
+			"url": "media/IMG_4628.mov",
+			"icon": "media/small-icon.jpg"
+		},
+		{
+			"title": "Xplora Stories",
+			"date": "1 day ago",
+			"url": "media/IMG_4629.mov",
+			"icon": "media/small-icon.jpg"
+		}
+		];
+
+		var socialStory = new Story({
+			playlist: myPlaylist
+		});
+
+	  </script>
+
+
+
+        
+</body>
+</html>

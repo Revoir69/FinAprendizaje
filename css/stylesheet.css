@@ -1,0 +1,285 @@
+
+@font-face {
+    font-family: 'open_sansbold';
+    src: url('/fonts/opensans-bold-webfont.woff2') format('woff2'),
+         url('/fonts/opensans-bold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'open_sansregular';
+    src: url('/fonts/opensans-regular-webfont.woff2') format('woff2'),
+         url('/fonts/opensans-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'open_sanslight';
+    src: url('/fonts/opensans-light-webfont.woff2') format('woff2'),
+         url('/fonts/opensans-light-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+b{
+    font-family: 'open_sansbold'!important;
+}
+
+body { margin:0; padding:0; overflow-y: hidden; }
+
+#portada{
+    height: 100%;
+    overflow: visible;
+    opacity: 1;
+    position: relative;
+    top: 0;
+    left: 0;
+}
+
+
+#card{
+    width: 600px;
+    height: 600px;
+    position: absolute;
+    top: 120px;
+    left: 650px;
+    opacity: 0;
+}
+
+#podium{
+    width: 1130px;
+    height: 1284px;
+    position: absolute;
+    top: -220px;
+    left: 2200px;
+    opacity: 1;
+    z-index: 2;
+}
+
+#luz1{
+    width: 1111px;
+    height: 1132px;
+    position: absolute;
+    top: -220px;
+    left: 2250px;
+    opacity: 0;
+    z-index: 1;
+}
+
+#luz2{
+    width: 426px;
+    height: 1181px;
+    position: absolute;
+    top: -220px;
+    left: 2550px;
+    opacity: 0;
+    z-index: 1;
+}
+
+#logo{
+    width: 539px;
+    height: 456px;
+    position: absolute;
+    top: 150px;
+    left: 2530px;
+    opacity: 0;
+    z-index: 1;
+}
+
+#logro1{
+    width: 357px;
+    height: 787px;
+    position: absolute;
+    top: -20px;
+    left: 4830px;
+    opacity: 1;
+    z-index: 1;
+}
+
+#logro2{
+    width: 336px;
+    height: 771px;
+    position: absolute;
+    top: -220px;
+    left: 5900px;
+    opacity: 1;
+    z-index: 1;
+
+}
+
+#logro3{
+    width: 336px;
+    height: 771px;
+    position: absolute;
+    top: -60px;
+    left: 6490px;
+    opacity: 1;
+    z-index: 1;
+
+}
+#logro4{
+    width: 336px;
+    height: 771px;
+    position: absolute;
+    top: -360px;
+    left: 6870px;
+    opacity: 1;
+    z-index: 1;
+
+}
+#logro5{
+    width: 336px;
+    height: 771px;
+    position: absolute;
+    top: -70px;
+    left: 7350px;
+    opacity: 1;
+    z-index: 1;
+
+}
+#logro6{
+    width: 336px;
+    height: 771px;
+    position: absolute;
+    top: -100px;
+    left: 7890px;
+    opacity: 1;
+    z-index: 1;
+
+}
+
+#container{
+    position: relative;
+    width: 15000px;
+    height: 1080px;
+    top: 0;
+    left: 0;
+    background-image: url("/img/Fondofull.png");
+    background-repeat: no-repeat;
+}
+
+.title{
+    font-size: 100px;
+    color: #E12726;
+    margin: 0;
+    font-family: 'open_sansbold';
+    margin-left: 2000px;
+}
+
+.title1{
+    font-size: 100px;
+    color: #fff;
+    margin: 0;
+    margin-top: 200px;
+    font-family: 'open_sansbold';
+    margin-left:4100px;
+}
+
+.title2{
+    width: 470px;
+    font-size: 30px;
+    color: #E12726;
+    margin: 0;
+    margin-top: -500px;
+    font-family: 'open_sansbold';
+    margin-left: 5210px;
+}
+
+.p1{
+    width: 420px;
+    font-size: 23px;
+    color: #E12726;
+    margin: 0;
+    margin-top: 40px;
+    font-family: 'open_sanslight';
+    margin-left: 5210px;
+}
+
+.p2{
+    width: 420px;
+    font-size: 23px;
+    color: #fff;
+    margin: 0;
+    margin-top: -80px;
+    font-family: 'open_sanslight';
+    margin-left: 5950px
+}
+
+.p3{
+    width: 350px;
+    font-size: 23px;
+    color: #fff;
+    margin: 0;
+    margin-top: 62px;
+    font-family: 'open_sanslight';
+    margin-left: 6530px;
+}
+
+.p4{
+    width: 390px;
+    font-size: 23px;
+    color: #fff;
+    margin: 0;
+    margin-top: -358px;
+    font-family: 'open_sanslight';
+    margin-left: 6910px;
+}
+
+.p5{
+    width: 390px;
+    font-size: 23px;
+    color: #fff;
+    margin: 0;
+    margin-top: 192px;
+    font-family: 'open_sanslight';
+    margin-left: 7370px;
+}
+
+.p6{
+    width: 390px;
+    font-size: 23px;
+    color: #E12726;
+    margin: 0;
+    margin-top: -125px;
+    font-family: 'open_sanslight';
+    margin-left: 7930px
+}
+
+.sub{
+    margin-top: 100px;
+}
+
+
+#stories{
+    width: 432px;
+    height: 680px;
+    position: absolute;
+    top: 48px;
+    left: 8733px;
+    opacity: 1;
+    z-index: 1;
+    cursor: pointer;
+
+}
+
+
+
+
+
+
+
+
+@media only screen and (max-width: 600px) {
+    #popup{
+        position:absolute; top:0; bottom:0; width:100%;
+    }
+    
+    #content_popup p{
+        font-size: 22px/26px;
+    }
+}
